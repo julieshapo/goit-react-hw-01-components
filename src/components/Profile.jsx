@@ -1,5 +1,12 @@
-export default function UserCard(props) {
-  const { avatar, username, tag, location, stats: { followers, views, likes } } = props;
+import PropTypes from 'prop-types';
+
+export default function User(props) {
+  const { avatar,
+    username,
+    tag,
+    location,
+    stats: { followers, views, likes }
+  } = props;
   
   return <div class="profile">
   <div class="description">
@@ -8,7 +15,7 @@ export default function UserCard(props) {
       alt="User avatar"
       class="avatar"
     />
-      <p class="name">{ username }</p>
+    <p class="name">{username}</p>
     <p class="tag">{tag}</p>
     <p class="location">{location}</p>
   </div>
@@ -28,4 +35,14 @@ export default function UserCard(props) {
     </li>
   </ul>
 </div>
+}
+
+User.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 }
