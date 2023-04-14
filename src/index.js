@@ -14,13 +14,8 @@ const theme = {
     green: 'green',
     red: 'orangeRed',
     lightBlue: 'lightblue',
-    randomColor: getRandomHexColor(),
   },
 };
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

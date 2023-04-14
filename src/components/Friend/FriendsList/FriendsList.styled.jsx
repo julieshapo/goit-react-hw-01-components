@@ -7,7 +7,7 @@ export const List = styled.ul`
   gap: 8px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
 `;
 
 export const ListItem = styled.li`
