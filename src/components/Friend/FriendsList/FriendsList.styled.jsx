@@ -13,5 +13,5 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   border: 1px solid transparent;
   border-radius: 4px;
-  box-shadow: 0px 5px 30px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 20px 2px rgba(0, 0, 0, 0.2);
 `;
