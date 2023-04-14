@@ -13,7 +13,7 @@ const theme = {
     accent: 'tomato',
     green: 'green',
     red: 'orangeRed',
-    lightBlue: 'lightblue',
+    lightBlue: '#14acdf',
   },
 };
 

@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import { FriendCard, Status, Image, Name } from './FriendCard.styled';
 
-export const FriendListItem = ({ item }) => {
+export const FriendListItem = ({ item: { isOnline, avatar, name } }) => {
+  console.log(isOnline);
   return (
     <FriendCard>
-      <Status class="status">{item.isOnline}</Status>
-      <Image class="avatar" src={item.avatar} alt="User avatar" width="52" />
-      <Name class="name">{item.name}</Name>
+      <Status active={isOnline === true}>{isOnline}</Status>
+      <Image src={avatar} alt="User avatar" width="52" />
+      <Name>{name}</Name>
     </FriendCard>
   );
 };

@@ -24,7 +24,7 @@ export const Profile = ({ item }) => {
   return (
     <Container>
       <ProfileCard>
-        <Description class="description">
+        <Description>
           <Avatar src={avatar} alt="User avatar" width="150" />
           <Name>{username}</Name>
           <Details>@{tag}</Details>
@@ -33,16 +33,16 @@ export const Profile = ({ item }) => {
 
         <Stats>
           <StatItem>
-            <Label class="label">Followers</Label>
-            <Quantity class="quantity">{followers}</Quantity>
+            <Label>Followers</Label>
+            <Quantity>{followers}</Quantity>
           </StatItem>
           <StatItem>
-            <Label class="label">Views</Label>
-            <Quantity class="quantity">{views}</Quantity>
+            <Label>Views</Label>
+            <Quantity>{views}</Quantity>
           </StatItem>
           <StatItem>
-            <Label class="label">Likes</Label>
-            <Quantity class="quantity">{likes}</Quantity>
+            <Label>Likes</Label>
+            <Quantity>{likes}</Quantity>
           </StatItem>
         </Stats>
       </ProfileCard>

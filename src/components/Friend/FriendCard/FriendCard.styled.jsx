@@ -5,13 +5,15 @@ export const FriendCard = styled.div`
   height: 100px;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
 `;
 
 export const Status = styled.span`
-  background-color: red;
+  background-color: ${p => {
+    return p.active ? p.theme.colors.green : p.theme.colors.red;
+  }};
   width: 20px;
   height: 20px;
   border-radius: 50px;
@@ -22,6 +24,6 @@ export const Image = styled.img`
 `;
 
 export const Name = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 `;
