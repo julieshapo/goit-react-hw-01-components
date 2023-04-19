@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { FriendCard, Status, Image, Name } from './FriendCard.styled';
 
 export const FriendListItem = ({ item: { isOnline, avatar, name } }) => {
-  console.log(isOnline);
   return (
     <FriendCard>
       <Status active={isOnline === true}>{isOnline}</Status>
